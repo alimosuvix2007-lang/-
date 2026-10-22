@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#70dcf5">
+<meta name="description" content="سفر به سرزمین دانایی؛ بازی ماجراجویی آموزشی برای دانش‌آموزان پایه اول تا ششم دبستان">
+<title>سفر به سرزمین دانایی | طراحی: سید ابراهیم موسوی</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky-cloud cloud-a">☁️</div><div class="sky-cloud cloud-b">☁️</div><div class="sky-star">✨</div>
+<header class="topbar">
+  <button class="icon-btn" id="soundBtn" aria-label="تغییر صدای بازی">🔊</button>
+  <div class="brand"><span class="brand-mark">✦</span><span>سفر به سرزمین دانایی</span><span class="brand-mark">✦</span></div>
+  <div class="wallet"><span>⭐ <b id="totalStars">۰</b></span><span>🪙 <b id="totalCoins">۰</b></span></div>
+</header>
+<main>
+<section class="screen active" id="home">
+ <div class="hero">
+  <div class="hero-copy">
+   <div class="ribbon">🌈 یک ماجراجویی جادویی برای ذهن‌های کنجکاو</div>
+   <h1>به سرزمین<br><em>دانایی</em> خوش آمدی!</h1>
+   <p class="lead">از قلعه‌ی ریاضی تا جنگل علوم سفر کن، معماها را حل کن، دوست‌های تازه پیدا کن و نشان قهرمان دانایی را به دست بیاور!</p>
+   <div class="hero-friends"><span class="friend fox">🦊</span><span class="friend owl">🦉</span><span class="friend frog">🐸</span><span class="friend panda">🐼</span></div>
+   <button class="btn btn-primary btn-large" id="startBtn">🚀 شروع ماجراجویی</button>
+   <div class="home-actions"><button class="btn btn-light" id="settingsBtn">⚙️ تنظیمات</button><button class="btn btn-light" id="aboutBtn">💛 درباره بازی</button></div>
+   <div class="designer-plaque"><span>✦</span><div><small>طراحی و ایده‌پردازی</small><strong>سید ابراهیم موسوی</strong></div><span>✦</span></div>
+   <p class="home-note">ویژه‌ی دانش‌آموزان پایه اول تا ششم ابتدایی</p>
+  </div>
+  <div class="storybook">
+   <div class="sun">☀️</div><div class="rainbow">🌈</div><span class="spark spark-one">⭐</span><span class="spark spark-two">✨</span>
+   <div class="mountain mountain-one"></div><div class="mountain mountain-two"></div>
+   <div class="castle"><div class="castle-tower tower-left"></div><div class="castle-tower tower-mid"></div><div class="castle-tower tower-right"></div><div class="castle-house">🚪</div><div class="castle-flag">🚩</div></div>
+   <div class="green-hill"></div><div class="tree tree-left">🌳</div><div class="tree tree-right">🌲</div><div class="treasure">🎁</div>
+   <div class="storybook-label">سرزمین شگفتی‌ها</div><div class="fox-waving">🦊<span>سلام قهرمان!</span></div>
+  </div>
+ </div>
+ <div class="feature-strip"><div>🧠 <b>یادگیری با بازی</b></div><div>🗺️ <b>کشف سرزمین‌ها</b></div><div>🏅 <b>نشان قهرمانی</b></div><div>💚 <b>اشتباه، بخشی از یادگیری است</b></div></div>
+</section>
+
+<section class="screen" id="grades">
+ <button class="btn btn-light back" data-screen="home">⬅️ خانه</button>
+ <div class="section-title"><div class="section-icon">🎓</div><div><h2>قهرمان کوچولو، در کدام کلاسی؟</h2><p>پایه‌ات را انتخاب کن تا مأموریت مناسب تو آماده شود.</p></div></div>
+ <div class="grade-grid">
+  <button class="grade-card grade1" data-grade="1"><span>🐣</span><b>کلاس اول</b><small>قدم‌های نخست</small><i>⭐</i></button>
+  <button class="grade-card grade2" data-grade="2"><span>🐸</span><b>کلاس دوم</b><small>کشف‌های تازه</small><i>🌱</i></button>
+  <button class="grade-card grade3" data-grade="3"><span>🦊</span><b>کلاس سوم</b><small>ذهن کنجکاو</small><i>🔎</i></button>
+  <button class="grade-card grade4" data-grade="4"><span>🐼</span><b>کلاس چهارم</b><small>ماجراجوی دانا</small><i>🗺️</i></button>
+  <button class="grade-card grade5" data-grade="5"><span>🦁</span><b>کلاس پنجم</b><small>قهرمان دانایی</small><i>🏅</i></button>
+  <button class="grade-card grade6" data-grade="6"><span>🐉</span><b>کلاس ششم</b><small>استاد کوچک</small><i>👑</i></button>
+ </div>
+</section>
+
+<section class="screen" id="map">
+ <button class="btn btn-light back" data-screen="grades">⬅️ تغییر پایه</button>
+ <div class="section-title"><div class="section-icon">🗺️</div><div><h2 id="mapHeading">نقشه‌ی ماجراجویی</h2><p>سرزمینت را انتخاب کن و مأموریت را شروع کن!</p></div></div>
+ <div class="map-progress-card"><div>🏅 نشان‌های به‌دست‌آمده: <b id="badgeCount">۰</b></div><div>🎯 مأموریت‌های کامل‌شده: <b id="completedCount">۰</b></div></div>
+ <div class="world-map"><div class="map-cloud mc-one">☁️</div><div class="map-cloud mc-two">☁️</div><div class="river"></div>
+  <div class="islands">
+   <button class="island island-math" data-subject="math"><span class="island-art">🏰</span><b>قلعه‌ی ریاضی</b><small>عددها و معماها</small><span class="island-stars">⭐ ⭐ ⭐</span></button>
+   <button class="island island-science" data-subject="science"><span class="island-art">🌳</span><b>جنگل علوم</b><small>طبیعت و کشف</small><span class="island-stars">🍃 🐞 🍃</span></button>
+   <button class="island island-persian" data-subject="persian"><span class="island-art">📚</span><b>باغ کلمات</b><small>فارسی و واژه‌ها</small><span class="island-stars">🌷 ✨ 🌷</span></button>
+   <button class="island island-life" data-subject="life"><span class="island-art">🌍</span><b>شهر مهربانی</b><small>زندگی و جهان</small><span class="island-stars">💛 🏡 💛</span></button>
+  </div>
+  <div class="map-footer">🧭 هر پاسخ درست، تو را به گنج دانایی نزدیک‌تر می‌کند!</div><div class="map-boat">⛵</div>
+ </div>
+ <div class="map-tip">💡 لازم نیست همه‌چیز را از اول بلد باشی؛ با تمرین یاد می‌گیری.</div>
+</section>
+
+<section class="screen" id="quiz">
+ <div class="quiz-toolbar"><button class="btn btn-light" id="backMap">🗺️ نقشه</button><div class="level-pill" id="level">مرحله ۱</div><div class="hearts" id="hearts">💖 💖 💖</div></div>
+ <div class="progress"><div id="progressFill"></div></div>
+ <div class="mission-meta"><span id="missionGrade">کلاس اول</span><span id="missionSubject">قلعه‌ی ریاضی</span><span id="missionObjective">هدف: تمرین و یادگیری</span></div>
+ <div class="guide-line"><div class="owl-guide">🦉</div><div class="speech" id="guideSpeech">سلام قهرمان! آماده‌ای؟</div></div>
+ <div class="quiz-card"><div class="subject-label" id="subjectLabel">🏰 قلعه‌ی ریاضی</div><h2 id="question">سؤال اینجا می‌آید</h2><div id="hint" class="hint"></div><div class="answers" id="answers"></div><div class="feedback" id="feedback" aria-live="polite"></div><button class="btn btn-primary next" id="nextBtn" hidden>مرحله‌ی بعدی ➜</button></div>
+ <p class="kind-reminder">🌟 قهرمان واقعی کسی است که تلاش می‌کند؛ اشتباه کردن بخشی از یادگیری است.</p>
+</section>
+
+<section class="screen result" id="result">
+ <div class="confetti">🎉 ✨ ⭐ 🎊 ✨ 🎉</div><div class="result-mascot" id="resultMascot">🏆</div><div class="ribbon">مأموریت انجام شد!</div>
+ <h2 id="resultHeading">آفرین قهرمان دانایی!</h2><p id="resultDescription">تو یک قدم دیگر یاد گرفتی.</p>
+ <div class="reward-row"><div>⭐ <b id="earnedStars">۰</b><small>ستاره‌ی این مرحله</small></div><div>🪙 <b id="earnedCoins">۰</b><small>سکه‌ی این مرحله</small></div><div>✅ <b id="correctCount">۰</b><small>پاسخ درست</small></div></div>
+ <div class="badge" id="badge">🏅 نشان تلاش</div><div class="result-buttons"><button class="btn btn-primary btn-large" id="anotherBtn">🎯 بازی دوباره</button><button class="btn btn-light" id="resultMapBtn">🗺️ بازگشت به نقشه</button></div>
+</section>
+
+<section class="screen" id="teacher">
+ <button class="btn btn-light back" data-screen="map">⬅️ بازگشت</button>
+ <div class="section-title"><div class="section-icon">👩‍🏫</div><div><h2>گوشه‌ی آموزگار</h2><p>خلاصه‌ای از پیشرفت بازی در همین دستگاه.</p></div></div>
+ <div class="teacher-stats"><div>⭐ مجموع ستاره‌ها <b id="teacherStars">۰</b></div><div>🪙 مجموع سکه‌ها <b id="teacherCoins">۰</b></div><div>🎯 مأموریت‌ها <b id="teacherCompleted">۰</b></div></div>
+ <p class="teacher-note">این نسخه، اطلاعات را فقط در مرورگر همین دستگاه ذخیره می‌کند. برای گزارش‌گیری واقعی از چند دانش‌آموز یا ارسال اطلاعات به معلم، به پایگاه داده و سامانه‌ی امن نیاز است.</p>
+ <button class="btn btn-light" id="clearProgress">پاک کردن پیشرفت ذخیره‌شده</button>
+</section>
+</main>
+<div class="modal-shade" id="modalShade" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-x" id="closeModal">✖</button><h2 id="modalTitle">تنظیمات</h2><div id="modalContent"></div></div></div>
+<footer><div>ساخته‌شده با 💛 برای یادگیری شاد کودکان</div><div class="footer-credit">طراحی و ایده‌پردازی: <strong>سید ابراهیم موسوی</strong></div></footer>
+<script src="game.js"></script>
+</body></html>
